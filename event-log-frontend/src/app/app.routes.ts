@@ -5,5 +5,5 @@ import { SearchEventsComponent } from './components/search-events/search-events.
 export const routes: Routes = [
   { path: 'register', component: RegisterEventComponent },
   { path: 'search', component: SearchEventsComponent },
-  { path: '', redirectTo: '/register', pathMatch: 'full' }  // Redirigir a /register por defecto
+  { path: '', redirectTo: '/register', pathMatch: 'full' } 
 ];

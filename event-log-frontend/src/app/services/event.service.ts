@@ -6,13 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EventService {
-  private apiUrl = 'http://localhost:5000/api/events'; // URL del backend
+  private apiUrl = 'http://localhost:5000/api/events';
 
   constructor(private http: HttpClient) {}
 
   registerEvent(description: string, eventType: string, eventDate: string): Observable<any> {
-    const body = { description, eventType, date: eventDate }; // Crear el objeto que se enviará al backend
-    return this.http.post(`${this.apiUrl}/register`, body); // Enviar solicitud POST
+    const body = { description, eventType, date: eventDate }; 
+    return this.http.post(`${this.apiUrl}/register`, body); 
   }
 
   searchEvents(filters: any): Observable<any> {

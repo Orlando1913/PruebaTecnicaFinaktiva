@@ -62,7 +62,7 @@ export class RegisterEventComponent {
         console.log('Evento registrado con éxito', response);
         this.message = 'Evento registrado con éxito!';
         this.isSuccess = true;
-        this.resetForm(); // Opcional: Resetear el formulario
+        this.resetForm();
       },
       error: (error) => {
         console.error('Error registrando el evento', error);

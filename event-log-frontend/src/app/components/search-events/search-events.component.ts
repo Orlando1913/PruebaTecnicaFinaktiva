@@ -55,7 +55,7 @@ export class SearchEventsComponent {
 
     this.eventService.searchEvents(filters).subscribe({
       next: (response) => {
-        this.results = response; // Asignar los resultados
+        this.results = response; 
       },
       error: (error) => {
         console.error('Error buscando eventos', error);
